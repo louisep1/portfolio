@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-  --light-color: rgb(249, 217, 181);
-  --dark-color: rgba(251, 201, 151, 0.861);
-
-  --off-black: rgb(29, 29, 29);
-
-  --logo-color: #bcd7f1;
+  --pink: #fb2142;
+  --dark: #30526a;
+  --blue: #5ec9cc;
+  --red: #f25044;
+  --yellow: #f9d291;
+  --brown: #672b01;
 }
 
 * {
@@ -21,7 +21,8 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #202c39;
+  /* background-color: var(--yellow); */
+  /* background: #f9627d; */
 }
 
 a {
@@ -74,7 +75,9 @@ footer {
 }
 
 header {
-  background: url(./assets/background/tokyo.jpg) no-repeat top center/cover;
+  /* background: url(./assets/background/tokyo.jpg) no-repeat top center/cover; */
+  background: url(./assets/background/background.png) no-repeat center
+    center/cover;
   /* height: 100vh; */
   height: 30rem;
 
@@ -87,7 +90,9 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* background-color: rgba(246, 89, 32, 0.493); */
+  /* background: #f9627d; */
 }
 
 .navbar {
@@ -120,7 +125,7 @@ header {
 }
 
 .nav-links li a {
-  color: var(--logo-color);
+  color: #1c3141;
 }
 
 .nav-links li:hover {
@@ -135,7 +140,7 @@ header {
 }
 
 .title {
-  color: #fff;
+  color: var(--pink);
   margin: 1.5rem 4rem;
 }
 
@@ -150,20 +155,24 @@ header {
 
 .title p {
   font-size: 1rem;
-  padding: 0.2rem;
+  padding: 0.3rem 0.2rem;
 }
 
 /* Skills: */
 .skill-section {
   /* border: 3px solid white; */
-  padding-top: 1rem;
+  padding: 1rem 0;
   text-align: center;
+  background: var(--yellow);
+  /* background: rgb(250, 224, 122); */
 }
 
 .skill-section p {
   font-size: 1.5rem;
+  padding-bottom: 0.2rem;
   /* font-weight: 300; */
-  color: #fff;
+  /* color: #fff; */
+  /* color: #333; */
 }
 
 .skills {
@@ -188,7 +197,8 @@ header {
   /* text-decoration: underline; */
   font-weight: bold;
   padding-bottom: 0.4rem;
-  color: #fff;
+  /* color: #fff; */
+  /* color: #333; */
 }
 
 .skill {
@@ -197,7 +207,8 @@ header {
   text-align: center;
   width: fit-content;
   white-space: nowrap;
-  background: #bcd7f1;
+  /* background: var(--red); */
+  background: rgb(250, 147, 133);
 }
 
 /* Bio section: */
