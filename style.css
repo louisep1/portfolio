@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --light-color: rgb(249, 217, 181);
+  --dark-color: rgba(251, 201, 151, 0.861);
+
+  --off-black: rgb(29, 29, 29);
+
+  --logo-color: #bcd7f1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #202c39;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  overflow-wrap: break-word;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.6;
+  padding-bottom: 5px;
+}
+
+/* section {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding: 0 30px;
+} */
+
+footer {
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 60px auto;
+  padding: 20px 3rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px #ccc;
+  /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); */
+}
+
+header {
+  background: url(./assets/background/tokyo.jpg) no-repeat top center/cover;
+  /* height: 100vh; */
+  height: 30rem;
+
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+}
+
+.logo {
+  width: 4.5rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 0.2rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.nav-links li {
+  margin: 0 15px 3px;
+  /* 3px margin bottom is placeholder for hover border */
+  padding: 4px 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.nav-links li a {
+  color: var(--logo-color);
+}
+
+.nav-links li:hover {
+  transition: 0.1s;
+  border-bottom: rgb(249, 242, 232) 3px solid;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.title {
+  color: #fff;
+  margin: 1.5rem 4rem;
+}
+
+.title h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.title h3 {
+  font-size: 2rem;
+}
+
+.title p {
+  font-size: 1rem;
+  padding: 0.2rem;
+}
+
+/* Skills: */
+.skill-section {
+  /* border: 3px solid white; */
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.skill-section p {
+  font-size: 1.5rem;
+  /* font-weight: 300; */
+  color: #fff;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 90%;
+  /* border: 3px solid white; */
+  margin: auto;
+}
+
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px 5px;
+}
+
+.skill-type {
+  /* text-decoration: underline; */
+  font-weight: bold;
+  padding-bottom: 0.4rem;
+  color: #fff;
+}
+
+.skill {
+  border-radius: 20px;
+  padding: 3px 10px;
+  text-align: center;
+  width: fit-content;
+  white-space: nowrap;
+  background: #bcd7f1;
+}
+
+/* Bio section: */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.bio {
+  margin: 30px auto;
+}
+
+.my-face {
+  border-radius: 50%;
+  width: 16rem;
+  margin-left: 90px;
+}
+
+/* .skills {
+  margin-top: 1rem;
+  padding-left: 4rem;
+} */
+
+/* Skills section for top and main: */
+/* .skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  align-items: center;
+  gap: 5px 5px;
+} */
+
+.skills-heading {
+  font-weight: bold;
+  padding: 10px 0 2px 5px;
+}
+
+/* Link Buttons: */
+.btn a {
+  display: inline-block;
+  width: max-content;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: #333 2px solid;
+  transition: 0.3s;
+}
+
+.btn a:hover {
+  color: rgb(158, 154, 154);
+  border: #ccc 2px solid;
+}
+
+.btn a i {
+  padding-right: 5px;
+}
+
+/* Projects: */
+.project {
+  padding-bottom: 30px;
+}
+
+.project .project-name {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.project .project-name h3 {
+  padding-top: 0.3rem;
+  font-weight: 500;
+}
+
+.project .icon {
+  width: 4rem;
+}
+
+/* Drop down section stuff */
+.drop {
+  border-top: #ccc 1px solid;
+  padding: 0.2rem 0.5rem 0.7rem;
+}
+
+.drop:last-child {
+  padding: 1.4rem 0.5rem;
+  border-bottom: #ccc 1px solid;
+}
+
+.drop > :first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.drop button {
+  border: none;
+  background-color: #fff;
+}
+
+.drop button:hover {
+  cursor: pointer;
+}
+
+.drop .fa-chevron-down {
+  transition: transform 0.5s;
+}
+
+.hide {
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.closed {
+  max-height: 0;
+}
+
+.open {
+  max-height: 200rem;
+}
+
+.margin-placeholder {
+  /* this cannot go in the main hide div, else the margin space is still there even when the content itself is 'hidden': */
+  margin: 1.5rem 0.5rem;
+}
+
+/* Projects section cont... */
+.video {
+  width: 50rem;
+  margin: 40px auto;
+}
+
+video {
+  width: 50rem;
+}
+
+/* Sliding section / mini projects section: */
+.area {
+  position: relative;
+  height: 35rem;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  color: #ccc;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  color: rgb(235, 235, 235);
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.slide-div {
+  display: none;
+  padding-bottom: 20px;
+  height: 7rem;
+}
+
+.slide-div .btn {
+  margin: 12px 0 10px;
+}
+
+.div0 {
+  display: block;
+}
+
+.img-space {
+  width: 90%;
+  margin: 70px auto;
+  padding: 10px;
+  border: rgba(184, 183, 183, 0.379) 1px solid;
+}
+
+/* Footer: */
+footer {
+  background: var(--light-color);
+}
+
+footer a {
+  color: var(--off-black);
+}
+
+footer div:first-child {
+  display: flex;
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+footer div:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  padding-top: 6px;
+}
+
+/* Other: */
+.mt-2 {
+  margin-top: 12px;
+}
+
+.mt-3 {
+  margin-top: 18px;
+}
+
+/* Media queries: */
+@media (max-width: 1100px) {
+  .container {
+    width: 95%;
+    padding: 10px 20px;
+    margin: 40px auto;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .bio {
+    margin: 10px auto;
+  }
+
+  .skills {
+    padding-left: 2rem;
+  }
+
+  .video,
+  video {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-face {
+    margin: 0;
+  }
+
+  .video,
+  video {
+    width: 30rem;
+  }
+
+  .area {
+    height: 28rem;
+  }
+
+  .slide-div {
+    height: 8rem;
+  }
+
+  .arrow {
+    top: 60%;
+  }
+
+  .left {
+    left: -8px;
+  }
+
+  .right {
+    right: -8px;
+  }
+
+  .img-space {
+    width: 100%;
+    margin: 80px auto;
+    padding: 0;
+  }
+
+  .drop {
+    padding: 0.8rem 0.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links li {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 5px;
+  }
+
+  .skills {
+    padding: 0;
+  }
+
+  .video,
+  video {
+    width: 20rem;
+  }
+
+  .area {
+    height: 22rem;
+  }
+
+  .slide-div {
+    height: 8rem;
+    font-size: 0.8rem;
+  }
+
+  .img-space {
+    margin: 60px auto;
+  }
+
+  footer {
+    padding: 30px 0;
+  }
+
+  .margin-placeholder {
+    margin: 0.8rem 0.5rem;
+  }
+
+  #projects {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 4px 5px;
+    padding-top: 15px;
+  }
+
+  .logo {
+    margin: 5px auto 10px;
+  }
+
+  .nav-links {
+    margin: 12px auto 5px;
+  }
+
+  .nav-links li {
+    margin: 0 auto 3px;
+  }
+
+  .container {
+    margin: 20px auto;
+  }
+
+  .img-space {
+    margin: 85px auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .video,
+  video {
+    min-width: 18rem;
+  }
+
+  .slide-div {
+    height: 9rem;
+  }
+
+  .slide-div .skills-box .skill {
+    margin: 2px;
+  }
+}
