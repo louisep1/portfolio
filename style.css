@@ -324,6 +324,22 @@ video {
   margin: 0.1rem 0;
 }
 
+/* Smaller projects section */
+.small-apps {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.slide-div h4 a {
+  color: var(--dark);
+  font-size: 1.2rem;
+}
+
+.slide-div .btn {
+  margin: 1rem 0;
+}
+
 /*  */
 /*  */
 /*  */
@@ -412,19 +428,22 @@ video {
   height: 7rem;
 }
 
-.slide-div .btn {
-  margin: 12px 0 10px;
-}
-
 .div0 {
   display: block;
 }
 
 .img-space {
   width: 90%;
+  /* height: 100%; */
+  border: 3px solid greenyellow;
+  height: 100rem;
   margin: 70px auto;
   padding: 10px;
   border: rgba(184, 183, 183, 0.379) 1px solid;
+}
+
+.img-space img {
+  border: 3px red solid;
 }
 
 /* Footer: */

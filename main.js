@@ -38,9 +38,9 @@ const left = document.querySelector('.left')
 const right = document.querySelector('.right')
 
 const images = [
-  './resources/dolphin-page-screenshot.jpg',
-  './resources/weather-page-screenshot.jpg',
-  './resources/dive-map-screenshot.jpg',
+  './assets/projects/dolphin-page-screenshot.jpg',
+  './assets/projects/weather-page-screenshot.jpg',
+  './assets/projects/dive-map-screenshot.jpg',
 ]
 
 const divs = document.querySelectorAll('.slide-div')
