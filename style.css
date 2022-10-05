@@ -218,9 +218,9 @@ header {
 
 .project {
   background: var(--blue);
-  padding: 1rem 1.5rem;
   margin: 1rem;
   border-radius: 20px;
+  padding: 1rem 1.5rem;
 }
 
 /* Project title bar */
@@ -435,6 +435,15 @@ footer div:nth-child(2) {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 30px;
   }
+
+  .bio-section .container {
+    width: 100%;
+  }
+
+  .bio {
+    padding: 1rem;
+    margin: auto;
+  }
 }
 
 @media (max-width: 780px) {
@@ -497,8 +506,20 @@ footer div:nth-child(2) {
     height: 20rem;
   }
 
+  .bio-section {
+    padding: 1rem;
+  }
+
   .skill {
     font-size: 0.9rem;
+  }
+
+  .projects-section h1 {
+    margin: 0 4rem 2rem;
+  }
+
+  .line {
+    margin: 1.5rem 4rem;
   }
 }
 
@@ -571,9 +592,36 @@ footer div:nth-child(2) {
     margin: 0 1rem;
   }
 
+  /* .bio-section {
+    padding: 1rem;
+  }
+
+  .bio-section .container {
+    width: 100%;
+  }
+
+  .bio {
+    padding: 1rem;
+    margin: auto;
+  } */
+
   .projects-section h1,
   .project .project-name h3 {
     font-size: 1.8rem;
+  }
+
+  .project {
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+
+  .buttons {
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .btn a {
+    padding: 10px;
   }
 
   .small-apps {
