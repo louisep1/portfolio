@@ -77,14 +77,15 @@ header {
   text-align: center;
   font-size: 1.1rem;
   font-weight: 500;
+  transition: 0.3s;
 }
 
 .nav-links li a {
   color: #1c3141;
+  transition: 0.3s;
 }
 
 .nav-links li:hover {
-  transition: 0.1s;
   border-bottom: #fff 3px solid;
   margin-bottom: 0;
   color: #fff;
@@ -221,6 +222,7 @@ header {
   margin: 1rem;
   border-radius: 20px;
   padding: 1rem 1.5rem;
+  box-shadow: 0 2px 3px #ccc;
 }
 
 /* Project title bar */

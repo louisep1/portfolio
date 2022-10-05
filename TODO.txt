@@ -1,5 +1,4 @@
-project icons too big on mobile (530)
+maybe project icons too big on mobile (530) ????
 
 Later:
 go back and have text fly in and bounce in effects
-add/fix border shaddow in css
