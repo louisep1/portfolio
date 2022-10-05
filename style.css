@@ -554,6 +554,10 @@ footer div:nth-child(2) {
       center/cover;
   }
 
+  .nav-links {
+    padding: 5px;
+  }
+
   .projects-section h1,
   .project .project-name h3 {
     font-size: 1.8rem;
