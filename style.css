@@ -558,8 +558,17 @@ footer div:nth-child(2) {
     padding: 5px;
   }
 
+  .nav-links li:hover {
+    border-bottom: var(--blue) 3px solid;
+    color: var(--blue);
+  }
+
+  .nav-links li:hover a {
+    color: var(--blue);
+  }
+
   .title {
-    margin: 0 0.5rem;
+    margin: 0 1rem;
   }
 
   .projects-section h1,
