@@ -50,6 +50,8 @@ p {
   padding-bottom: 5px;
 }
 
+/* !!! go back and see if these defaults are still necessary for h1 h3 p */
+
 footer {
   background-color: #fff;
   padding: 50px;
@@ -240,7 +242,6 @@ header {
 
 .project {
   background: var(--blue);
-  /* margin: 2rem 0; */
   padding: 1rem 1.5rem;
   margin: 1rem;
   border-radius: 20px;
@@ -263,6 +264,43 @@ header {
 .project .icon {
   width: 4rem;
   border-radius: 50%;
+}
+
+/* Drop down section stuff */
+.drop > :first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.drop button {
+  border: none;
+  background: var(--blue);
+}
+
+.drop button:hover {
+  cursor: pointer;
+}
+
+.drop .fa-chevron-down {
+  transition: transform 0.5s;
+}
+
+.hide {
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.closed {
+  max-height: 0;
+}
+
+.open {
+  max-height: 200rem;
+}
+
+.margin-placeholder {
+  /* this cannot go in the main hide div, else the margin space is still there even when the content itself is 'hidden': */
+  margin: 1.5rem 0.5rem;
 }
 
 /* Main projects body */
@@ -340,64 +378,7 @@ video {
   margin: 1rem 0;
 }
 
-/*  */
-/*  */
-/*  */
-/*  */
-/* !!!!!!! OLD: */
-
-/* in the projects section: */
-
-/* Drop down section stuff */
-.drop {
-  border-top: #ccc 1px solid;
-  /* padding: 0.2rem 0.5rem 0.7rem; */
-}
-
-.drop:last-child {
-  padding: 1.4rem 0.5rem;
-  border-bottom: #ccc 1px solid;
-}
-
-.drop > :first-child {
-  display: flex;
-  justify-content: space-between;
-}
-
-.drop button {
-  border: none;
-  background: var(--blue);
-}
-
-.drop button:hover {
-  cursor: pointer;
-}
-
-.drop .fa-chevron-down {
-  transition: transform 0.5s;
-}
-
-.hide {
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.closed {
-  max-height: 0;
-}
-
-.open {
-  max-height: 200rem;
-}
-
-.margin-placeholder {
-  /* this cannot go in the main hide div, else the margin space is still there even when the content itself is 'hidden': */
-  margin: 1.5rem 0.5rem;
-}
-
-/* Projects section cont... */
-
-/* Sliding section / mini projects section: */
+/* Sliding section: */
 .area {
   position: relative;
   height: 35rem;
@@ -424,8 +405,7 @@ video {
 
 .slide-div {
   display: none;
-  padding-bottom: 20px;
-  height: 7rem;
+  height: 8.5rem;
 }
 
 .div0 {
@@ -433,26 +413,18 @@ video {
 }
 
 .img-space {
-  width: 90%;
-  /* height: 100%; */
-  border: 3px solid greenyellow;
-  height: 100rem;
-  margin: 70px auto;
-  padding: 10px;
+  width: 60%;
+  margin: 2rem auto auto;
   border: rgba(184, 183, 183, 0.379) 1px solid;
-}
-
-.img-space img {
-  border: 3px red solid;
 }
 
 /* Footer: */
 footer {
-  background: var(--light-color);
+  background: var(--dark);
 }
 
 footer a {
-  color: var(--off-black);
+  color: #fff;
 }
 
 footer div:first-child {
@@ -468,38 +440,20 @@ footer div:nth-child(2) {
   padding-top: 6px;
 }
 
-/* Other: */
-/* .mt-2 {
-  margin-top: 12px;
+/* Media queries: */
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .title h1 {
+    font-size: 3.7rem;
+  }
 }
 
-.mt-3 {
-  margin-top: 18px;
-} */
-
-/* Media queries: */
-@media (max-width: 1100px) {
-  /* .container {
-    width: 95%;
-    padding: 10px 20px;
-    margin: 40px auto;
-  } */
-
-  /* section {
-    padding: 20px;
-  } */
-
-  .bio {
-    margin: 10px auto;
-  }
-
-  .skills {
-    padding-left: 2rem;
-  }
-
-  .video,
-  video {
-    width: 40rem;
+@media (max-width: 880px) {
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.587);
   }
 }
 
@@ -523,12 +477,8 @@ footer div:nth-child(2) {
     width: 30rem;
   }
 
-  .area {
-    height: 28rem;
-  }
-
   .slide-div {
-    height: 8rem;
+    height: 7rem;
   }
 
   .arrow {
@@ -569,7 +519,7 @@ footer div:nth-child(2) {
   }
 
   .area {
-    height: 22rem;
+    height: 30rem;
   }
 
   .slide-div {
@@ -618,9 +568,9 @@ footer div:nth-child(2) {
     margin: 0 auto 3px;
   }
 
-  /* .container {
-    margin: 20px auto;
-  } */
+  .area {
+    height: 27rem;
+  }
 
   .img-space {
     margin: 85px auto;
@@ -633,11 +583,21 @@ footer div:nth-child(2) {
     min-width: 18rem;
   }
 
-  .slide-div {
-    height: 9rem;
+  /* .skill-box {
+    gap: 0;
+  } */
+
+  .area {
+    height: 25rem;
   }
 
   .slide-div .skills-box .skill {
-    margin: 2px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .slide-div {
+    height: 10.5rem;
   }
 }
