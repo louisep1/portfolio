@@ -75,22 +75,15 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
-  padding: 12px 40px;
-}
-
-.logo {
-  width: 4.5rem;
-  border-radius: 50%;
-  border: 1px solid white;
-  padding: 0.2rem;
 }
 
 .nav-links {
   display: flex;
   justify-content: center;
-  margin: 5px 0;
+  margin: 5px;
+  padding: 12px 35px;
 }
 
 .nav-links li {
@@ -442,8 +435,8 @@ footer div:nth-child(2) {
 
 /* Media queries: */
 @media (max-width: 1000px) {
-  .navbar {
-    padding: 12px 20px;
+  .nav-links {
+    padding: 12px 15px;
   }
 
   .title h1 {
@@ -452,31 +445,44 @@ footer div:nth-child(2) {
 }
 
 @media (max-width: 880px) {
-  .navbar {
-    background-color: rgba(255, 255, 255, 0.587);
+  .nav-links {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
   }
 }
 
 @media (max-width: 780px) {
+  header {
+    height: 26rem;
+  }
+
+  .title {
+    margin: 0.3rem 2.5rem;
+  }
+
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .title h3 {
+    font-size: 1.8rem;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
 
-  .grid > :nth-child(2) {
+  /* .grid > :nth-child(2) {
     display: flex;
     flex-direction: column;
     align-items: center;
+  } */
+
+  .buttons {
+    margin-bottom: 2rem;
   }
 
-  .my-face {
-    margin: 0;
-  }
-
-  .video,
-  video {
-    width: 30rem;
-  }
-
+  /* !!! go back and check all this slide div stuff: */
   .slide-div {
     height: 7rem;
   }
@@ -498,26 +504,41 @@ footer div:nth-child(2) {
     margin: 80px auto;
     padding: 0;
   }
+}
 
-  .drop {
-    padding: 0.8rem 0.2rem;
+@media (max-width: 650px) {
+  header {
+    height: 20rem;
+  }
+
+  .skill {
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 600px) {
+  .skills {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+
+  .title {
+    margin: 0 1.5rem;
+  }
+
+  .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .title h3 {
+    font-size: 1.8rem;
+  }
+
   .nav-links li {
     font-size: 1rem;
   }
 
-  .skills {
-    padding: 0;
-  }
-
-  .video,
-  video {
-    width: 20rem;
-  }
-
+  /* !!! go back and check this slider section */
   .area {
     height: 30rem;
   }
@@ -542,32 +563,15 @@ footer div:nth-child(2) {
   #projects {
     font-size: 1.2rem;
   }
-
-  h3 {
-    font-size: 1rem;
-  }
 }
 
-@media (max-width: 480px) {
-  .navbar {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 4px 5px;
-    padding-top: 15px;
+@media (max-width: 530px) {
+  header {
+    background: url(./assets/background/background-mobile.png) no-repeat center
+      center/cover;
   }
 
-  .logo {
-    margin: 5px auto 10px;
-  }
-
-  .nav-links {
-    margin: 12px auto 5px;
-  }
-
-  .nav-links li {
-    margin: 0 auto 3px;
-  }
-
+  /* !! go back and check this slider section */
   .area {
     height: 27rem;
   }
@@ -577,16 +581,20 @@ footer div:nth-child(2) {
   }
 }
 
-@media (max-width: 400px) {
-  .video,
-  video {
-    min-width: 18rem;
+@media (max-width: 450px) {
+  .title h1 {
+    font-size: 2.2rem;
   }
 
-  /* .skill-box {
-    gap: 0;
-  } */
+  .title h3 {
+    font-size: 1.5rem;
+  }
 
+  .title p {
+    font-size: 0.8rem;
+  }
+
+  /* !!! go back and check this section */
   .area {
     height: 25rem;
   }
