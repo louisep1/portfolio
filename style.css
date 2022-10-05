@@ -118,8 +118,14 @@ header {
 
 /* Skills: */
 .skill-section {
-  padding: 1rem 0;
   text-align: center;
+
+  /* margin: 0.5rem 4rem;
+  border-top: var(--red) 3px solid;
+  border-bottom: var(--red) 3px solid;
+  padding: 0.5rem 0; */
+
+  padding: 1rem 0;
   background: var(--yellow);
 }
 
