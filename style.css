@@ -676,6 +676,6 @@ footer div:nth-child(2) {
 
 @media (max-width: 350px) {
   .slide-div {
-    height: 10.5rem;
+    height: 12rem;
   }
 }
