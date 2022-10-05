@@ -1,8 +1,9 @@
 ASAP:
 too but white space for nav links and name/title needs to move up a bit
+
 profile image needs to go above text on mobile
-profile img a bit smaller
-profile text is not centered
+profile img a bit smaller => it is being cut off on right
+profile text is not centered => also cut off on right
 the line under projects and line above footer are messed up on mobile => significantly reduce the y axis margin
 web and repo buttons for each project is cut off
 each project => remove some of the padding/margin between content and blue box
