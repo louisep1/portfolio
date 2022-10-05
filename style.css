@@ -107,7 +107,6 @@ header {
 .nav-links li:hover {
   transition: 0.1s;
   border-bottom: #fff 3px solid;
-  /* border-bottom: rgb(249, 242, 232) 3px solid; */
   margin-bottom: 0;
   color: #fff;
 }
@@ -199,23 +198,7 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   align-items: center;
-  /* grid-template-rows: 1fr 1fr; */
-  /* justify-items: center; */
-  /* align-items: center; */
 }
-
-/* .text-container {
-  position: relative;
-  width: 100%;
-} */
-
-/* .bubble {
-  position: absolute;
-  top: 0;
-  left: -1rem;
-  width: 110%;
-  height: 85%;
-} */
 
 .bio {
   border-radius: 20px;
@@ -229,26 +212,14 @@ header {
   color: #fff;
 }
 
-/* .img-container { */
-/* border: 3px green solid; */
-/* position: relative;
-  width: 100%;
-  height: 40rem; */
-/* } */
-
 .profile-pic {
   border-radius: 50%;
-  /* width: 80%; */
   width: 21rem;
   justify-self: center;
-  /* position: absolute;
-  bottom: 0;
-  right: 0; */
 }
 
 /* Projects  */
 .projects-section {
-  padding: 1rem 0;
   background: #fff;
 }
 
@@ -256,17 +227,45 @@ header {
   text-align: center;
   font-size: 2.2rem;
   font-weight: 300;
-  padding: 1.5rem 0;
-  background: var(--blue);
-  color: #fff;
+  padding: 1.5rem 0 0.7rem;
+  color: var(--dark);
+  border-bottom: var(--dark) 2px solid;
+  margin: 0 10rem 2rem;
+}
+
+.line {
+  border-bottom: var(--dark) 2px solid;
+  margin: 1.5rem 10rem;
 }
 
 .project {
   background: var(--blue);
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
   padding: 1rem 1.5rem;
+  margin: 1rem;
+  border-radius: 20px;
 }
 
+/* Project title bar */
+.project .project-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project .project-name h3 {
+  padding-top: 0.3rem;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.project .icon {
+  width: 4rem;
+  border-radius: 50%;
+}
+
+/* Main projects body */
 .buttons {
   display: flex;
   gap: 1rem;
@@ -306,6 +305,13 @@ video {
   margin-bottom: 1rem;
 }
 
+.skills-heading {
+  font-weight: bold;
+  padding: 10px 0 5px;
+  text-align: center;
+  font-weight: 300;
+}
+
 .dark {
   background: var(--dark);
   color: #fff;
@@ -319,33 +325,6 @@ video {
 /* !!!!!!! OLD: */
 
 /* in the projects section: */
-.skills-heading {
-  font-weight: bold;
-  padding: 10px 0 2px 5px;
-}
-
-/* Projects: */
-/* .project {
-  padding-bottom: 30px;
-} */
-
-.project .project-name {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.project .project-name h3 {
-  padding-top: 0.3rem;
-  font-weight: 300;
-  font-size: 2rem;
-  color: #fff;
-}
-
-.project .icon {
-  width: 4rem;
-  border-radius: 50%;
-}
 
 /* Drop down section stuff */
 .drop {
@@ -465,13 +444,13 @@ footer div:nth-child(2) {
 }
 
 /* Other: */
-.mt-2 {
+/* .mt-2 {
   margin-top: 12px;
 }
 
 .mt-3 {
   margin-top: 18px;
-}
+} */
 
 /* Media queries: */
 @media (max-width: 1100px) {
@@ -554,10 +533,6 @@ footer div:nth-child(2) {
   .nav-links li {
     font-size: 1rem;
   }
-
-  /* section {
-    padding: 5px;
-  } */
 
   .skills {
     padding: 0;
