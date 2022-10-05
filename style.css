@@ -21,8 +21,6 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  /* background-color: var(--yellow); */
-  /* background: #f9627d; */
 }
 
 a {
@@ -52,48 +50,26 @@ p {
   padding-bottom: 5px;
 }
 
-/* section {
-  margin-top: 20px;
-  margin-bottom: 60px;
-  padding: 0 30px;
-} */
-
 footer {
   background-color: #fff;
   padding: 50px;
   text-align: center;
 }
 
-.container {
-  width: 80%;
-  margin: 60px auto;
-  padding: 20px 3rem;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 3px #ccc;
-  /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); */
-}
-
 header {
-  /* background: url(./assets/background/tokyo.jpg) no-repeat top center/cover; */
   background: url(./assets/background/background.png) no-repeat center
     center/cover;
-  /* height: 100vh; */
   height: 30rem;
-
   position: relative;
 }
 
-.overlay {
+/* .overlay {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  /* background-color: rgba(0, 0, 0, 0.5); */
-  /* background-color: rgba(246, 89, 32, 0.493); */
-  /* background: #f9627d; */
-}
+} */
 
 .navbar {
   display: flex;
@@ -130,12 +106,13 @@ header {
 
 .nav-links li:hover {
   transition: 0.1s;
-  border-bottom: rgb(249, 242, 232) 3px solid;
+  border-bottom: #fff 3px solid;
+  /* border-bottom: rgb(249, 242, 232) 3px solid; */
   margin-bottom: 0;
   color: #fff;
 }
 
-.nav-links a:hover {
+.nav-links li:hover a {
   color: #fff;
 }
 
@@ -147,10 +124,12 @@ header {
 .title h1 {
   font-size: 4rem;
   font-weight: 300;
+  letter-spacing: 0.1rem;
 }
 
 .title h3 {
   font-size: 2rem;
+  letter-spacing: 0.1rem;
 }
 
 .title p {
@@ -160,19 +139,15 @@ header {
 
 /* Skills: */
 .skill-section {
-  /* border: 3px solid white; */
   padding: 1rem 0;
   text-align: center;
   background: var(--yellow);
-  /* background: rgb(250, 224, 122); */
 }
 
 .skill-section p {
   font-size: 1.5rem;
-  padding-bottom: 0.2rem;
-  /* font-weight: 300; */
-  /* color: #fff; */
-  /* color: #333; */
+  padding-bottom: 0.5rem;
+  font-weight: 300;
 }
 
 .skills {
@@ -180,7 +155,6 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   width: 90%;
-  /* border: 3px solid white; */
   margin: auto;
 }
 
@@ -194,11 +168,8 @@ header {
 }
 
 .skill-type {
-  /* text-decoration: underline; */
   font-weight: bold;
   padding-bottom: 0.4rem;
-  /* color: #fff; */
-  /* color: #333; */
 }
 
 .skill {
@@ -211,40 +182,95 @@ header {
   background: rgb(250, 147, 133);
 }
 
-/* Bio section: */
+/* Bio */
+.bio-section {
+  background: var(--pink);
+  padding: 2rem 1rem;
+}
+
+.bio-section .container {
+  width: 95%;
+  margin: auto;
+}
+
+/* !!! maybe move this: */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
+  align-items: center;
+  /* grid-template-rows: 1fr 1fr; */
+  /* justify-items: center; */
+  /* align-items: center; */
 }
+
+/* .text-container {
+  position: relative;
+  width: 100%;
+} */
+
+/* .bubble {
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  width: 110%;
+  height: 85%;
+} */
 
 .bio {
-  margin: 30px auto;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1.7rem auto;
+  border: #fff 5px solid;
 }
 
-.my-face {
+.bio p {
+  line-height: 1.8;
+  color: #fff;
+}
+
+/* .img-container { */
+/* border: 3px green solid; */
+/* position: relative;
+  width: 100%;
+  height: 40rem; */
+/* } */
+
+.profile-pic {
   border-radius: 50%;
-  width: 16rem;
-  margin-left: 90px;
+  /* width: 80%; */
+  width: 21rem;
+  justify-self: center;
+  /* position: absolute;
+  bottom: 0;
+  right: 0; */
 }
 
-/* .skills {
-  margin-top: 1rem;
-  padding-left: 4rem;
-} */
+/* Projects  */
+.projects-section {
+  padding: 1rem 0;
+  background: #fff;
+}
 
-/* Skills section for top and main: */
-/* .skills-box {
+.projects-section h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 300;
+  padding: 1.5rem 0;
+  background: var(--blue);
+  color: #fff;
+}
+
+.project {
+  background: var(--blue);
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+}
+
+.buttons {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-  align-items: center;
-  gap: 5px 5px;
-} */
-
-.skills-heading {
-  font-weight: bold;
-  padding: 10px 0 2px 5px;
+  gap: 1rem;
+  margin: 1rem 0;
 }
 
 /* Link Buttons: */
@@ -252,45 +278,79 @@ header {
   display: inline-block;
   width: max-content;
   padding: 10px 15px;
-  margin-bottom: 8px;
   border-radius: 5px;
-  border: #333 2px solid;
+  border: var(--dark) 2px solid;
+  background: #fff;
+  color: var(--dark);
   transition: 0.3s;
 }
 
 .btn a:hover {
-  color: rgb(158, 154, 154);
-  border: #ccc 2px solid;
+  color: #fff;
+  background: var(--dark);
 }
 
 .btn a i {
   padding-right: 5px;
 }
 
-/* Projects: */
-.project {
-  padding-bottom: 30px;
+video {
+  width: 100%;
 }
+
+.project-text p {
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--dark);
+  padding: 1rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.dark {
+  background: var(--dark);
+  color: #fff;
+  font-weight: 300;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/* !!!!!!! OLD: */
+
+/* in the projects section: */
+.skills-heading {
+  font-weight: bold;
+  padding: 10px 0 2px 5px;
+}
+
+/* Projects: */
+/* .project {
+  padding-bottom: 30px;
+} */
 
 .project .project-name {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 1rem;
 }
 
 .project .project-name h3 {
   padding-top: 0.3rem;
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #fff;
 }
 
 .project .icon {
   width: 4rem;
+  border-radius: 50%;
 }
 
 /* Drop down section stuff */
 .drop {
   border-top: #ccc 1px solid;
-  padding: 0.2rem 0.5rem 0.7rem;
+  /* padding: 0.2rem 0.5rem 0.7rem; */
 }
 
 .drop:last-child {
@@ -305,7 +365,7 @@ header {
 
 .drop button {
   border: none;
-  background-color: #fff;
+  background: var(--blue);
 }
 
 .drop button:hover {
@@ -335,14 +395,6 @@ header {
 }
 
 /* Projects section cont... */
-.video {
-  width: 50rem;
-  margin: 40px auto;
-}
-
-video {
-  width: 50rem;
-}
 
 /* Sliding section / mini projects section: */
 .area {
@@ -423,15 +475,15 @@ footer div:nth-child(2) {
 
 /* Media queries: */
 @media (max-width: 1100px) {
-  .container {
+  /* .container {
     width: 95%;
     padding: 10px 20px;
     margin: 40px auto;
-  }
+  } */
 
-  section {
+  /* section {
     padding: 20px;
-  }
+  } */
 
   .bio {
     margin: 10px auto;
@@ -503,9 +555,9 @@ footer div:nth-child(2) {
     font-size: 1rem;
   }
 
-  section {
+  /* section {
     padding: 5px;
-  }
+  } */
 
   .skills {
     padding: 0;
@@ -566,9 +618,9 @@ footer div:nth-child(2) {
     margin: 0 auto 3px;
   }
 
-  .container {
+  /* .container {
     margin: 20px auto;
-  }
+  } */
 
   .img-space {
     margin: 85px auto;
