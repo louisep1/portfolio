@@ -467,6 +467,10 @@ footer div:nth-child(2) {
     grid-template-columns: 1fr;
   }
 
+  .profile-pic {
+    grid-row: 1;
+  }
+
   /* .grid > :nth-child(2) {
     display: flex;
     flex-direction: column;
@@ -651,6 +655,10 @@ footer div:nth-child(2) {
 
   .title p {
     font-size: 0.8rem;
+  }
+
+  .profile-pic {
+    width: 18rem;
   }
 
   /* !!! go back and check this section */

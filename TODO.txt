@@ -1,7 +1,2 @@
-profile image needs to go above text on mobile
-profile img a bit smaller => it is being cut off on right
-
-
-Later:
 go back and have text fly in and bounce in effects
 add/fix border shaddow in css
