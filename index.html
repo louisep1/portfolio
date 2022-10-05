@@ -105,12 +105,6 @@
 
     <section id="bio" class="bio-section">
       <div class="grid container">
-        <!-- <div class="text-container">
-          <img
-            src="./assets/background/speech-bubble.png"
-            alt=""
-            class="bubble"
-          /> -->
         <div class="bio">
           <p>Welcome to my portfolio.</p>
           <p>
@@ -131,17 +125,15 @@
             using both relational and non-relational databases.
           </p>
         </div>
-        <!-- </div> -->
 
-        <!-- <div class="img-container"> -->
         <img class="profile-pic" src="./assets/profile-pic.png" alt="" />
-        <!-- </div> -->
       </div>
     </section>
 
     <section class="projects-section">
       <h1 id="projects">Projects</h1>
 
+      <!-- Hotel Page Project: -->
       <div class="project drop">
         <div id="click">
           <div class="project-name">
@@ -208,6 +200,7 @@
         </div>
       </div>
 
+      <!-- Event Page Project: -->
       <div class="project drop">
         <div id="click">
           <div class="project-name">
@@ -215,61 +208,146 @@
             <h3>Event Ticket Page</h3>
           </div>
 
-          <button>
+          <button id="drop">
             <i class="fa-solid fa-chevron-down"></i>
           </button>
         </div>
+
         <div class="hide open">
           <div class="margin-placeholder">
-            <div class="btn">
-              <a href="http://event-ticket-page.herokuapp.com/" target="_blank">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                View Website
-              </a>
-            </div>
-            <div class="btn">
-              <a
-                href="https://github.com/louisep1/mern-event-ticket-page"
-                target="_blank"
-              >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                GitHub Repo
-              </a>
+            <div class="buttons">
+              <div class="btn">
+                <a
+                  href="http://event-ticket-page.herokuapp.com/"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  View Website
+                </a>
+              </div>
+              <div class="btn">
+                <a
+                  href="https://github.com/louisep1/mern-event-ticket-page"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  GitHub Repo
+                </a>
+              </div>
             </div>
 
-            <div class="video">
+            <div class="grid">
               <video controls>
                 <source
-                  src="./resources/vid-event-ticket-page.mp4"
+                  src="./assets/projects/vid-event-ticket-page.mp4"
                   type="video/mp4"
                 />
               </video>
+
+              <div class="project-text">
+                <p>
+                  Using React with Bootstrap styling in the frontend and
+                  Mongoose and Express in the backend to connect to MongoDB,
+                  this full stack app allows users to buy and sell tickets to
+                  their favourite events.
+                </p>
+                <div class="skills-heading">Using:</div>
+                <div class="skills-box">
+                  <div class="skill dark">MERN Stack</div>
+                  <div class="skill dark">Mongoose</div>
+                  <div class="skill dark">MongoDB</div>
+                  <div class="skill dark">Express/Node.js</div>
+                  <div class="skill dark">Bootstrap</div>
+                  <div class="skill dark">React</div>
+                  <div class="skill dark">React Router</div>
+                  <div class="skill dark">Redux Toolkit</div>
+                  <div class="skill dark">Heroku</div>
+                  <div class="skill dark">PalPal Sandbox</div>
+                </div>
+              </div>
             </div>
 
-            <p>
-              Using React with Bootstrap styling in the frontend and Mongoose
-              and Express in the backend to connect to MongoDB, this full stack
-              app allows users to buy and sell tickets to their favourite
-              events.
-            </p>
-            <div class="skills-heading">Using:</div>
-            <div class="skills-box">
-              <div class="skill coral">MERN Stack</div>
-              <div class="skill coral">Mongoose</div>
-              <div class="skill coral">MongoDB</div>
-              <div class="skill coral">Express/Node.js</div>
-              <div class="skill coral">Bootstrap</div>
-              <div class="skill coral">React</div>
-              <div class="skill coral">React Router</div>
-              <div class="skill coral">Redux Toolkit</div>
-              <div class="skill coral">Heroku</div>
-              <div class="skill coral">PalPal Sandbox</div>
-            </div>
+            <!-- end of project body  -->
           </div>
         </div>
       </div>
 
+      <!-- Messaging App Project: -->
       <div class="project drop">
+        <div id="click">
+          <div class="project-name">
+            <img src="./assets/icons/chat.jpg" alt="icon" class="icon" />
+            <h3>Messaging App</h3>
+          </div>
+
+          <button id="drop">
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+
+        <div class="hide open">
+          <div class="margin-placeholder">
+            <div class="buttons">
+              <div class="btn">
+                <a
+                  href="https://snapp-social-networking-app.herokuapp.com/"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  View Website
+                </a>
+              </div>
+              <div class="btn">
+                <a
+                  href="https://github.com/louisep1/mern-social-network-app"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+
+            <div class="grid">
+              <video controls>
+                <source
+                  src="./assets/projects/vid-social-network-app.mp4"
+                  type="video/mp4"
+                />
+              </video>
+
+              <div class="project-text">
+                <p>
+                  The <strong>Social Network App</strong> is a mobile-first
+                  messaging page, built with Tailwind CSS and DaisyUI in the
+                  frontend, inspired by popular modern-day messaging services
+                  and designed for optimum use on a mobile device. Users can
+                  search for friends by email address and send messages.
+                </p>
+
+                <div class="skills-heading">Using:</div>
+                <div class="skills-box">
+                  <div class="skill dark">React</div>
+                  <div class="skill dark">Tailwind CSS</div>
+                  <div class="skill dark">DaisyUI</div>
+                  <div class="skill dark">React Router</div>
+                  <div class="skill dark">Redux Toolkit</div>
+                  <div class="skill dark">Heroku</div>
+                </div>
+
+                <div class="note">
+                  ** Some use of MERN Stack - Mongoose/MongoDB, Express/Node.js
+                  - but would look to upgrade to real-time messaging
+                </div>
+              </div>
+            </div>
+
+            <!-- end of project body  -->
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="project drop">
         <div id="click">
           <div class="project-name">
             <img src="./assets/icons/chat.jpg" alt="icon" class="icon" />
@@ -336,7 +414,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="project drop">
         <div id="click">
