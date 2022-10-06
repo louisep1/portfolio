@@ -34,9 +34,9 @@ ul {
   list-style: none;
 }
 
-img {
+/* img {
   width: 100%;
-}
+} */
 
 /* h1 {
   font-size: 1.6rem;
@@ -200,8 +200,11 @@ header {
 
 .profile-pic {
   border-radius: 50%;
-  width: 21rem;
   justify-self: center;
+}
+
+.profile-pic img {
+  border-radius: 50%;
 }
 
 /* Projects  */
@@ -247,7 +250,7 @@ header {
 }
 
 .project .icon {
-  width: 4rem;
+  /* width: 4rem; */
   border-radius: 50%;
 }
 
@@ -692,9 +695,9 @@ footer div:nth-child(2) {
     font-size: 0.8rem;
   }
 
-  .profile-pic {
+  /* .profile-pic {
     width: 18rem;
-  }
+  } */
 
   /* !!! go back and check this section */
   .area {

@@ -122,7 +122,21 @@
           </p>
         </div>
 
-        <img class="profile-pic" src="./assets/profile-pic.png" alt="" />
+        <picture class="profile-pic">
+          <source
+            media="(max-width: 450px)"
+            srcset="./assets/profile-pic-sm.png"
+            width="288"
+            height="288"
+          />
+          <img
+            src="./assets/profile-pic.png"
+            alt="profile picture"
+            width="336"
+            height="336"
+            ;
+          />
+        </picture>
       </div>
     </section>
 
@@ -133,7 +147,13 @@
       <div class="project drop">
         <div id="click">
           <div class="project-name">
-            <img src="./assets/icons/resort.jpg" alt="icon" class="icon" />
+            <img
+              src="./assets/icons/resort.jpg"
+              alt="hotel icon"
+              class="icon"
+              width="64"
+              height="64"
+            />
             <h3>Hotel homepage</h3>
           </div>
 
@@ -200,7 +220,13 @@
       <div class="project drop">
         <div id="click">
           <div class="project-name">
-            <img src="./assets/icons/calendar.jpg" alt="icon" class="icon" />
+            <img
+              src="./assets/icons/calendar.jpg"
+              alt="calendar icon"
+              class="icon"
+              width="64"
+              height="64"
+            />
             <h3>Event Ticket Page</h3>
           </div>
 
@@ -272,7 +298,13 @@
       <div class="project drop">
         <div id="click">
           <div class="project-name">
-            <img src="./assets/icons/chat.jpg" alt="icon" class="icon" />
+            <img
+              src="./assets/icons/chat.jpg"
+              alt="chat bubbles icon"
+              class="icon"
+              width="64"
+              height="64"
+            />
             <h3>Messaging App</h3>
           </div>
 
