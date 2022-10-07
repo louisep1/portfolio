@@ -1,3 +1,6 @@
+!!! ADD fading in effects and effects on scroll
+
+
 FIX img and img-space for small projects section => add width/height to html, ect...
 
 do lighthouse inspects for both desktop and mobile
