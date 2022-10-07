@@ -107,7 +107,7 @@ header {
   letter-spacing: 0.1rem;
 }
 
-.title h3 {
+.title h2 {
   font-size: 2rem;
   letter-spacing: 0.1rem;
 }
@@ -212,7 +212,7 @@ header {
   background: #fff;
 }
 
-.projects-section h1 {
+.projects-section h2 {
   text-align: center;
   font-size: 2.2rem;
   font-weight: 300;
@@ -496,7 +496,7 @@ footer div:nth-child(2) {
     font-size: 3rem;
   }
 
-  .title h3 {
+  .title h2 {
     font-size: 1.8rem;
   }
 
@@ -555,7 +555,7 @@ footer div:nth-child(2) {
     font-size: 0.9rem;
   }
 
-  .projects-section h1 {
+  .projects-section h2 {
     margin: 0 4rem 2rem;
   }
 
@@ -578,7 +578,7 @@ footer div:nth-child(2) {
     font-size: 2.5rem;
   }
 
-  .title h3 {
+  .title h2 {
     font-size: 1.8rem;
   }
 
@@ -586,7 +586,7 @@ footer div:nth-child(2) {
     font-size: 1rem;
   }
 
-  .projects-section h1,
+  .projects-section h2,
   .project .project-name h3 {
     font-size: 2rem;
   }
@@ -646,7 +646,7 @@ footer div:nth-child(2) {
     margin: auto;
   } */
 
-  .projects-section h1,
+  .projects-section h2,
   .project .project-name h3 {
     font-size: 1.8rem;
   }
@@ -685,8 +685,8 @@ footer div:nth-child(2) {
     font-size: 2.2rem;
   }
 
-  .title h3,
-  .projects-section h1,
+  .title h2,
+  .projects-section h2,
   .project .project-name h3 {
     font-size: 1.5rem;
   }
