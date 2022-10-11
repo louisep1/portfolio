@@ -1,11 +1,11 @@
 !!! ADD fading in effects and effects on scroll
 
 
-FIX img and img-space for small projects section => add width/height to html, ect...
+Go back and FIX img and img-space for small projects section => add width/height to html, etc...
 
-do lighthouse inspects for both desktop and mobile
+Do lighthouse inspects for both desktop and mobile
 
-maybe project icons too big on mobile (530) ????
+Maybe project icons too big on mobile (530) ????
 
 Later:
-go back and have text fly in and bounce in effects
+Go back and have text fly in and bounce in effects
