@@ -1,3 +1,23 @@
+// Fade on scroll effect:
+const fadeSection = document.querySelectorAll('.fade-on-scroll')
+
+window.addEventListener('scroll', () => {
+  // console.log(window.pageYOffset)
+  fadeSection.forEach((section, i) => {
+    // if (section.parentElement.getBoundingClientRect().top <= 0) {
+    if (section.getBoundingClientRect().top <= 300) {
+      fadeSection[i].classList.add('appear')
+      console.log(fadeSection[i].classList)
+    }
+    // console.log(section.getBoundingClientRect().top)
+    // console.log(window.pageYOffset)
+    // console.log(section.offsetHeight)
+  })
+})
+
+// console.log(doc.scrollTop)
+// console.log(doc.clientTop)
+
 // Expandable/drop down sections:
 const click = document.querySelectorAll('#click')
 const hide = document.querySelectorAll('.hide')

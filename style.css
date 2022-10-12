@@ -125,46 +125,6 @@ h1 {
   animation: fly-from-bottom 1s forwards;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fly-from-right {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes fly-from-top {
-  0% {
-    transform: translateY(-100%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes fly-from-bottom {
-  0% {
-    transform: translateY(100%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
 /* Skills: */
 .skill-section {
   text-align: center;
@@ -490,6 +450,57 @@ footer div:nth-child(2) {
   grid-template-columns: 1fr;
   grid-gap: 5px;
   padding-top: 6px;
+}
+
+/* Animations */
+.fade-on-scroll {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+/* both fade-on-scroll AND appear class: */
+.fade-on-scroll.appear {
+  opacity: 1;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fly-from-right {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fly-from-top {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fly-from-bottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Media queries - larger screens */
