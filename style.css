@@ -176,6 +176,8 @@ h1 {
 
   padding: 1rem 0;
   background: var(--yellow);
+  animation: fade-in 2s forwards;
+  /* animation: fade-in 1s forwards; */
 }
 
 .skill-section p {
@@ -214,6 +216,12 @@ h1 {
   white-space: nowrap;
   /* background: var(--red); */
   background: rgb(250, 147, 133);
+}
+
+.skill,
+.skill-type {
+  opacity: 0;
+  animation: fade-in 1s forwards 1s;
 }
 
 /* Bio */
