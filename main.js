@@ -1,11 +1,14 @@
 // Fade on scroll effect:
 const fadeSection = document.querySelectorAll('.fade-on-scroll')
 
+const mobile = window.matchMedia('(max-width: 700px)').matches
+
 window.addEventListener('scroll', () => {
   fadeSection.forEach((section, i) => {
-    if (section.getBoundingClientRect().top <= 300) {
+    if (section.getBoundingClientRect().top <= 300 && !mobile) {
       fadeSection[i].classList.add('appear')
-      console.log(fadeSection[i].classList)
+    } else if (section.getBoundingClientRect().top <= 400) {
+      fadeSection[i].classList.add('appear')
     }
   })
 })
