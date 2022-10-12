@@ -45,10 +45,19 @@ p {
 }
 
 header {
-  background: url(./assets/background/background.png) no-repeat center
-    center/cover;
   height: 30rem;
   position: relative;
+}
+
+.header-img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: url(./assets/background/background.png) no-repeat center
+    center/cover;
+  animation: fade-in 2s forwards;
+  z-index: -1;
 }
 
 .navbar {
@@ -100,14 +109,60 @@ h1 {
   letter-spacing: 0.1rem;
 }
 
+.title h1 {
+  animation: fly-from-top 1s forwards;
+}
+
 .title h2 {
   font-size: 2rem;
   letter-spacing: 0.1rem;
+  animation: fly-from-right 1s forwards;
 }
 
 .title p {
   font-size: 1rem;
   padding: 0.3rem 0.2rem;
+  animation: fly-from-bottom 1s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fly-from-right {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fly-from-top {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fly-from-bottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Skills: */
