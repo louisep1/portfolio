@@ -661,7 +661,7 @@ footer div:nth-child(2) {
 }
 
 @media (max-width: 530px) {
-  header {
+  .header-img {
     background: url(./assets/background/background-mobile.png) no-repeat center
       center/cover;
   }
