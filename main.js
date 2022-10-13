@@ -1,7 +1,8 @@
 // Fade on scroll effect:
 const fadeSection = document.querySelectorAll('.fade-on-scroll')
 
-const mobile = window.matchMedia('(max-width: 700px)').matches
+// const mobile = window.matchMedia('(max-width: 700px)').matches
+const mobile = window.matchMedia('(max-width: 850px)').matches
 
 window.addEventListener('scroll', () => {
   fadeSection.forEach((section, i) => {

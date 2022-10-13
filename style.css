@@ -780,7 +780,8 @@ footer div:nth-child(2) {
 }
 
 /* Min width: */
-@media (min-width: 780px) {
+/* @media (min-width: 780px) { */
+@media (min-width: 850px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
