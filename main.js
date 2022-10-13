@@ -8,10 +8,9 @@ window.addEventListener('scroll', () => {
   fadeSection.forEach((section, i) => {
     if (section.getBoundingClientRect().top <= 300 && !mobile) {
       fadeSection[i].classList.add('appear')
+    } else if (section.getBoundingClientRect().top <= 600) {
+      fadeSection[i].classList.add('appear')
     }
-    // else if (section.getBoundingClientRect().top <= 500) {
-    //   fadeSection[i].classList.add('appear')
-    // }
   })
 })
 
