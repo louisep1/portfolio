@@ -1,17 +1,18 @@
 // Fade on scroll effect:
 const fadeSection = document.querySelectorAll('.fade-on-scroll')
 
-// const mobile = window.matchMedia('(max-width: 700px)').matches
-const mobile = window.matchMedia('(max-width: 850px)').matches
+const mobile = window.matchMedia('(max-width: 700px)').matches
+// const mobile = window.matchMedia('(max-width: 850px)').matches
 
 window.addEventListener('scroll', () => {
   fadeSection.forEach((section, i) => {
     if (section.getBoundingClientRect().top <= 300 && !mobile) {
       fadeSection[i].classList.add('appear')
-    } else if (section.getBoundingClientRect().top <= 700) {
+    } else if (section.getBoundingClientRect().top <= 600) {
       fadeSection[i].classList.add('appear')
     }
     // if this doesn't work, try an if(mobile){}
+    // maybe the projects should just all appear together instead of one by one ?
   })
 })
 

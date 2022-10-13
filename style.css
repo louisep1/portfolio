@@ -197,6 +197,7 @@ h1 {
 
 .grid {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   align-items: center;
 }
@@ -572,6 +573,10 @@ footer div:nth-child(2) {
     grid-template-columns: 1fr;
   }
 
+  .profile-pic {
+    grid-row: 1;
+  }
+
   /* .grid > :nth-child(2) {
     display: flex;
     flex-direction: column;
@@ -776,17 +781,5 @@ footer div:nth-child(2) {
 @media (max-width: 350px) {
   .slide-div {
     height: 12rem;
-  }
-}
-
-/* Min width: */
-/* @media (min-width: 780px) { */
-@media (min-width: 950px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .bio {
-    grid-row: 1;
   }
 }
