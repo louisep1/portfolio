@@ -9,6 +9,7 @@ const fadeOnScroll = () => {
   })
 }
 
+// Call once before listener, to make sure no blank spaces where scroll break-points met on page load
 fadeOnScroll()
 
 window.addEventListener('scroll', fadeOnScroll)
