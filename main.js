@@ -49,47 +49,42 @@ click.forEach((clickItem, i) => {
 })
 
 // Slider section:
-const slider = document.getElementById('slider')
 const left = document.querySelector('.left')
 const right = document.querySelector('.right')
-
-const images = [
-  './assets/projects/weather-page-screenshot.jpg',
-  './assets/projects/dive-map-screenshot.jpg',
-]
-
-const divs = document.querySelectorAll('.slide-div')
+const slides = document.querySelectorAll('.slide-project')
 
 let count = 0
 
 const updateDisplay = position => {
-  slider.src = images[position]
-  divs.forEach((div, i) =>
+  slides.forEach((slide, i) =>
     i === position
-      ? (div.style.display = 'block')
-      : (div.style.display = 'none')
+      ? slide.classList.add('show-slide')
+      : slide.classList.remove('show-slide')
   )
 }
 
 left.addEventListener('click', () => {
-  count = count - 1 === -1 ? images.length - 1 : count - 1
+  count = count - 1 === -1 ? slides.length - 1 : count - 1
   updateDisplay(count)
 })
 
 right.addEventListener('click', () => {
-  count = count + 1 === images.length ? 0 : count + 1
+  count = count + 1 === slides.length ? 0 : count + 1
   updateDisplay(count)
 })
 
 // Adding left and right swipe functionality to slider:
-const area = document.querySelector('.area')
+const slideArea = document.querySelector('.slider')
 let start = 0
 let end = 0
 
-area.addEventListener('touchstart', e => (start = e.changedTouches[0].screenX))
+slideArea.addEventListener(
+  'touchstart',
+  e => (start = e.changedTouches[0].screenX)
+)
 
-area.addEventListener('touchend', e => {
-  // First, check the location of the start of swipe is not in the area of the left/right arrows
+slideArea.addEventListener('touchend', e => {
+  // First, check the location of the start of swipe is not in the slideArea of the left/right arrows
   if (
     start > left.getBoundingClientRect().right &&
     start < right.getBoundingClientRect().left
@@ -98,10 +93,10 @@ area.addEventListener('touchend', e => {
 
     count =
       start > end && count - 1 === -1
-        ? images.length - 1
+        ? slides.length - 1
         : start > end
         ? count - 1
-        : count + 1 === images.length
+        : count + 1 === slides.length
         ? 0
         : start < end
         ? count + 1

@@ -35,10 +35,6 @@ ul {
   list-style: none;
 }
 
-/* img {
-  width: 100%;
-} */
-
 p {
   line-height: 1.6;
   padding-bottom: 5px;
@@ -128,16 +124,9 @@ h1 {
 /* Skills: */
 .skill-section {
   text-align: center;
-
-  /* margin: 0.5rem 4rem;
-  border-top: var(--red) 3px solid;
-  border-bottom: var(--red) 3px solid;
-  padding: 0.5rem 0; */
-
   padding: 1rem 0;
   background: var(--yellow);
   animation: fade-in 2s forwards;
-  /* animation: fade-in 1s forwards; */
 }
 
 .skill-section p {
@@ -244,7 +233,6 @@ h1 {
 }
 
 .project {
-  /* background: var(--blue); */
   margin: 1rem;
   border-radius: 20px;
   padding: 1rem 1.5rem;
@@ -266,7 +254,6 @@ h1 {
 }
 
 .project .icon {
-  /* width: 4rem; */
   border-radius: 50%;
   padding: 3px;
   border: var(--grey-blue) 2px solid;
@@ -281,7 +268,6 @@ h1 {
 .drop button {
   border: none;
   background: #fff;
-  /* background: var(--blue); */
 }
 
 .drop button:hover {
@@ -378,16 +364,8 @@ video {
   font-size: 1.5rem;
 }
 
-.slide-div h4 a {
-  color: var(--dark);
-  font-size: 1.2rem;
-}
-
-.slide-div .btn {
-  margin: 1rem 0;
-}
-
 /* Sliding section: */
+/* !!!! This height only needs to be adjusted for different screen sizes  */
 .area {
   position: relative;
   height: 35rem;
@@ -412,18 +390,39 @@ video {
   right: 0;
 }
 
-.slide-div {
-  display: none;
-  height: 8.5rem;
+/* Slide content: */
+.slider {
+  /* border: 3px solid green; */
+  position: relative;
+  height: 100%;
+  width: 90%;
+  margin: auto;
 }
 
-.div0 {
-  display: block;
+.slide-project {
+  /* border: 3px solid orange; */
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+}
+
+.show-slide {
+  opacity: 100%;
+  animation: fade-in 0.5s forwards;
+}
+
+.slide-project h4 a {
+  color: var(--dark);
+  font-size: 1.2rem;
+}
+
+.slide-project .btn {
+  margin: 1rem 0;
 }
 
 .img-space {
   width: 60%;
-  margin: 2rem auto auto;
+  margin: 2rem auto;
   border: rgba(184, 183, 183, 0.379) 1px solid;
 }
 
@@ -534,6 +533,10 @@ footer div:nth-child(2) {
   h1 {
     font-size: 3.7rem;
   }
+
+  .area {
+    height: 30rem;
+  }
 }
 
 @media (max-width: 880px) {
@@ -549,6 +552,10 @@ footer div:nth-child(2) {
   .bio {
     padding: 1rem;
     margin: auto;
+  }
+
+  .area {
+    height: 28rem;
   }
 }
 
@@ -577,23 +584,12 @@ footer div:nth-child(2) {
     grid-row: 1;
   }
 
-  /* .grid > :nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
-
   .buttons {
     margin-bottom: 2rem;
   }
 
-  /* !!! go back and check all this slide div stuff: */
-  .slide-div {
-    height: 7rem;
-  }
-
-  .arrow {
-    top: 60%;
+  .area {
+    height: 26rem;
   }
 
   .left {
@@ -602,12 +598,6 @@ footer div:nth-child(2) {
 
   .right {
     right: -8px;
-  }
-
-  .img-space {
-    width: 100%;
-    margin: 80px auto;
-    padding: 0;
   }
 }
 
@@ -626,6 +616,10 @@ footer div:nth-child(2) {
 
   .projects-section h2 {
     margin: 0 4rem 2rem;
+  }
+
+  .area {
+    height: 24rem;
   }
 
   .line {
@@ -663,20 +657,6 @@ footer div:nth-child(2) {
   .margin-placeholder {
     margin: 0.8rem 0.5rem;
   }
-
-  /* !!! go back and check this slider section */
-  .area {
-    height: 30rem;
-  }
-
-  .slide-div {
-    height: 8rem;
-    font-size: 0.8rem;
-  }
-
-  .img-space {
-    margin: 60px auto;
-  }
 }
 
 @media (max-width: 530px) {
@@ -702,19 +682,6 @@ footer div:nth-child(2) {
     margin: 0 1rem;
   }
 
-  /* .bio-section {
-    padding: 1rem;
-  }
-
-  .bio-section .container {
-    width: 100%;
-  }
-
-  .bio {
-    padding: 1rem;
-    margin: auto;
-  } */
-
   .projects-section h2,
   .project .project-name h3 {
     font-size: 1.8rem;
@@ -739,13 +706,8 @@ footer div:nth-child(2) {
     font-size: 1.3rem;
   }
 
-  /* !! go back and check this slider section */
   .area {
-    height: 27rem;
-  }
-
-  .img-space {
-    margin: 85px auto;
+    height: 22rem;
   }
 }
 
@@ -762,24 +724,5 @@ footer div:nth-child(2) {
 
   .title p {
     font-size: 0.8rem;
-  }
-
-  /* .profile-pic {
-    width: 18rem;
-  } */
-
-  /* !!! go back and check this section */
-  .area {
-    height: 25rem;
-  }
-
-  .slide-div .skills-box .skill {
-    margin: 0;
-  }
-}
-
-@media (max-width: 350px) {
-  .slide-div {
-    height: 12rem;
   }
 }

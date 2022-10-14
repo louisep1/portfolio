@@ -1,11 +1,5 @@
-!!! ADD fading in effects and effects on scroll
+.area
+transitions for slide dics
 
-
-Go back and FIX img and img-space for small projects section => add width/height to html, etc...
 
 Do lighthouse inspects for both desktop and mobile
-
-Maybe project icons too big on mobile (530) ????
-
-Later:
-Go back and have text fly in and bounce in effects
