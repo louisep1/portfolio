@@ -5,11 +5,8 @@ const mobile = window.matchMedia('(max-width: 700px)').matches
 // const mobile = window.matchMedia('(max-width: 850px)').matches
 
 window.addEventListener('scroll', () => {
-  // For mobile users with desktop view enabled - just show all once user reaches the bottom:
-  if (
-    Math.ceil(window.scrollY) ===
-    Math.ceil(document.documentElement.scrollHeight - window.innerHeight)
-  ) {
+  // Disabled for mobile => because if user on mobile enables desktop view, it looks ugly.
+  if (mobile) {
     fadeSection.forEach(section => section.classList.add('appear'))
   }
 
@@ -19,8 +16,6 @@ window.addEventListener('scroll', () => {
     } else if (section.getBoundingClientRect().top <= 600) {
       section.classList.add('appear')
     }
-    // if this doesn't work, try an if(mobile){}
-    // maybe the projects should just all appear together instead of one by one ?
   })
 })
 
