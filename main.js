@@ -1,18 +1,17 @@
 // Fade on scroll effect:
 const fadeSection = document.querySelectorAll('.fade-on-scroll')
 
-const mobile = window.matchMedia('(max-width: 700px)').matches
-// const mobile = window.matchMedia('(max-width: 850px)').matches
-
-window.addEventListener('scroll', () => {
+const fadeOnScroll = () => {
   fadeSection.forEach(section => {
-    if (section.getBoundingClientRect().top <= 300 && !mobile) {
-      section.classList.add('appear')
-    } else if (section.getBoundingClientRect().top <= 600) {
+    if (section.getBoundingClientRect().top <= (window.innerHeight / 5) * 4) {
       section.classList.add('appear')
     }
   })
-})
+}
+
+fadeOnScroll()
+
+window.addEventListener('scroll', fadeOnScroll)
 
 // Expandable/drop down sections:
 const click = document.querySelectorAll('#click')
