@@ -91,6 +91,13 @@ slideArea.addEventListener('touchend', e => {
   ) {
     end = e.changedTouches[0].screenX
 
+    // Check that it is swiped enough for it to be moved (swiped with intention, not just an accidental touch)
+    if (
+      (start - end < 100 && start - end > 0) ||
+      (end - start < 100 && end - start > 0)
+    )
+      return
+
     count =
       start > end && count - 1 === -1
         ? slides.length - 1

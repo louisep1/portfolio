@@ -1,5 +1,1 @@
-.area
-transitions for slide dics
-
-
 Do lighthouse inspects for both desktop and mobile

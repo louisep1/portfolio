@@ -408,7 +408,11 @@ video {
 
 .show-slide {
   opacity: 100%;
-  animation: fade-in 0.5s forwards;
+}
+
+/* Only want the nice slide animation on the img itself, not the whole div/section */
+.show-slide img {
+  animation: fade-in 1s forwards;
 }
 
 .slide-project h4 a {
