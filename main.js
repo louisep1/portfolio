@@ -5,11 +5,19 @@ const mobile = window.matchMedia('(max-width: 700px)').matches
 // const mobile = window.matchMedia('(max-width: 850px)').matches
 
 window.addEventListener('scroll', () => {
-  fadeSection.forEach((section, i) => {
+  // For mobile users with desktop view enabled:
+  if (
+    Math.ceil(window.scrollY) ===
+    document.documentElement.scrollHeight - window.innerHeight
+  ) {
+    fadeSection.forEach(section => section.classList.add('appear'))
+  }
+
+  fadeSection.forEach(section => {
     if (section.getBoundingClientRect().top <= 300 && !mobile) {
-      fadeSection[i].classList.add('appear')
+      section.classList.add('appear')
     } else if (section.getBoundingClientRect().top <= 600) {
-      fadeSection[i].classList.add('appear')
+      section.classList.add('appear')
     }
     // if this doesn't work, try an if(mobile){}
     // maybe the projects should just all appear together instead of one by one ?
