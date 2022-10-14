@@ -99,13 +99,13 @@ slideArea.addEventListener('touchend', e => {
       return
 
     count =
-      start > end && count - 1 === -1
+      end > start && count - 1 === -1
         ? slides.length - 1
-        : start > end
+        : end > start
         ? count - 1
         : count + 1 === slides.length
         ? 0
-        : start < end
+        : end < start
         ? count + 1
         : count
 
