@@ -56,7 +56,6 @@ const left = document.querySelector('.left')
 const right = document.querySelector('.right')
 
 const images = [
-  './assets/projects/dolphin-page-screenshot.jpg',
   './assets/projects/weather-page-screenshot.jpg',
   './assets/projects/dive-map-screenshot.jpg',
 ]

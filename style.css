@@ -178,8 +178,8 @@ h1 {
   background: rgb(250, 147, 133);
 }
 
-.skill,
-.skill-type {
+.skill-section .skill,
+.skill-section .skill-type {
   opacity: 0;
   animation: fade-in 1s forwards 1s;
 }
