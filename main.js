@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
   // For mobile users with desktop view enabled:
   if (
     Math.ceil(window.scrollY) ===
-    document.documentElement.scrollHeight - window.innerHeight
+    Math.ceil(document.documentElement.scrollHeight - window.innerHeight)
   ) {
     fadeSection.forEach(section => section.classList.add('appear'))
   }
