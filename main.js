@@ -5,7 +5,7 @@ const mobile = window.matchMedia('(max-width: 700px)').matches
 // const mobile = window.matchMedia('(max-width: 850px)').matches
 
 window.addEventListener('scroll', () => {
-  // For mobile users with desktop view enabled:
+  // For mobile users with desktop view enabled - just show all once user reaches the bottom:
   if (
     Math.ceil(window.scrollY) ===
     Math.ceil(document.documentElement.scrollHeight - window.innerHeight)
