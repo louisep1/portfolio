@@ -85,13 +85,14 @@ header {
 }
 
 .nav-links li:hover {
-  border-bottom: #fff 3px solid;
+  border-bottom: #fff 2px solid;
   margin-bottom: 0;
   color: #fff;
 }
 
 .nav-links li:hover a {
   color: #fff;
+  transition: 1s;
 }
 
 .title {
@@ -163,8 +164,11 @@ h1 {
   text-align: center;
   width: fit-content;
   white-space: nowrap;
-  /* background: var(--red); */
   background: rgb(250, 147, 133);
+}
+
+.skill:hover {
+  transform: translate(-2px, -1px);
 }
 
 .skill-section .skill,
@@ -392,7 +396,6 @@ video {
 
 /* Slide content: */
 .slider {
-  /* border: 3px solid green; */
   position: relative;
   height: 100%;
   width: 90%;
@@ -400,7 +403,6 @@ video {
 }
 
 .slide-project {
-  /* border: 3px solid orange; */
   position: absolute;
   opacity: 0;
   height: 100%;
