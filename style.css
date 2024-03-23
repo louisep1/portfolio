@@ -202,9 +202,14 @@ h1 {
   border: #fff 5px solid;
 }
 
-.bio p {
+.bio p,
+.bio a {
   line-height: 1.8;
   color: #fff;
+}
+
+.bio a {
+  text-decoration: underline;
 }
 
 .profile-pic {
